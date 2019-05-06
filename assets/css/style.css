@@ -1,0 +1,10 @@
+body {
+    background: rgb(119,136,153);
+}
+
+.headerstyling {
+    background: white;
+    border: black solid 2px;
+    text-align: center;
+    padding-top: 1px;
+}
