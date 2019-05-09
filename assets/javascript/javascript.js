@@ -23,6 +23,7 @@ $(document).ready(function() {
     var $crystal2 = $("#crystal2");
     var $crystal3 = $("#crystal3");
     var $crystal4 = $("#crystal4");
+    var $targetNumber = $("#targetNumber");
 
     //function for generating random numbers for crystals
     $crystal1 = Math.floor(Math.random() * 12) + 1 ;
@@ -33,5 +34,9 @@ $(document).ready(function() {
         console.log($crystal3);
     $crystal4 = Math.floor(Math.random() * 12) + 1 ;
         console.log($crystal4);
+
+    //function to randomly generate target number
+    $targetNumber = Math.floor(Math.random() * 120) + 19 ;
+    console.log($targetNumber);
 
 })
