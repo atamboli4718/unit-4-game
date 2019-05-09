@@ -16,3 +16,22 @@ create a function for if the userGuess > targetNumber   then
     wins return to 0 and game starts over
 
 */
+
+$(document).ready(function() {
+    
+    var $crystal1 = $("#crystal1");
+    var $crystal2 = $("#crystal2");
+    var $crystal3 = $("#crystal3");
+    var $crystal4 = $("#crystal4");
+
+    //function for generating random numbers for crystals
+    $crystal1 = Math.floor(Math.random() * 12) + 1 ;
+        console.log($crystal1);
+    $crystal2 = Math.floor(Math.random() * 12) + 1 ;
+        console.log($crystal2);
+    $crystal3 = Math.floor(Math.random() * 12) + 1 ;
+        console.log($crystal3);
+    $crystal4 = Math.floor(Math.random() * 12) + 1 ;
+        console.log($crystal4);
+
+})
