@@ -42,12 +42,18 @@ create a function for if the userGuess > targetNumber   then
 
     //var for guesses to increment into
     var yourGuess = [] ;
+    var sum = 0;
 
      //functions for clicks to increment into yourGuess var
     $("#crystal1").on("click", function () {
         yourGuess.push(crystal1);
         console.log("User guessed: " + crystal1);
         console.log(yourGuess);
+        sum = 0;
+        for (var i = 0; i < yourGuess.length; i++) {
+            sum += yourGuess[i];
+          }
+        console.log("Total user guess thus far: " + sum);
         });
 
 
