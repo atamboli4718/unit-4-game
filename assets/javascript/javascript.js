@@ -5,9 +5,9 @@
 ^create a var for the target numbers for the computer to guess from 19-120 (targetNumber)
 ^create a function to randomly generat 4 numbers to put in crystal vars
 ^create a function to randomly generate the target number
-^create a var for the user to add to when they click on each crystal (userGuess)
+^create a function for when the user clicks on each each crystal to add to the sum var    
+create a var for the user to add to when they click on each crystal (userGuess)
     disply ^ on the DOM
-create a function for when the user clicks on each each crystal to add to the userGuess var    
 create a var for wins (wins)
 create an alert for when targetOption == clicks, user wins! adds that win to the wins var above
     rerun function to generation the 4 numbers and the target numbers
@@ -41,23 +41,32 @@ create a function for if the userGuess > targetNumber   then
             console.log(targetNumber);
 
     //var for guesses to increment into
-    var yourGuess = [] ;
     var sum = 0;
 
      //functions for clicks to increment into yourGuess var
     $("#crystal1").on("click", function () {
-        yourGuess.push(crystal1);
+        sum = sum + crystal1; 
         console.log("User guessed: " + crystal1);
-        console.log(yourGuess);
-        sum = 0;
-        for (var i = 0; i < yourGuess.length; i++) {
-            sum += yourGuess[i];
-          }
         console.log("Total user guess thus far: " + sum);
-        });
-
-
-
+    });
+    
+    $("#crystal2").on("click", function () {
+        sum = sum + crystal2; 
+        console.log("User guessed: " + crystal2);
+        console.log("Total user guess thus far: " + sum);
+    });
+    
+    $("#crystal3").on("click", function () {
+        sum = sum + crystal3; 
+        console.log("User guessed: " + crystal3);
+        console.log("Total user guess thus far: " + sum);
+    });    
+    
+    $("#crystal4").on("click", function () {
+        sum = sum + crystal4; 
+        console.log("User guessed: " + crystal4);
+        console.log("Total user guess thus far: " + sum);
+    });
 
 
 
