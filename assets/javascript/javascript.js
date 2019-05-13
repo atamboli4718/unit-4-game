@@ -24,13 +24,13 @@ function setUp() {
 
     //functions for generating random numbers for crystals
     crystal1 = Math.floor(Math.random() * 12) + 1;
-    console.log(crystal1);
+    console.log("crystal 1 is: " + crystal1);
     crystal2 = Math.floor(Math.random() * 12) + 1;
-    console.log(crystal2);
+    console.log("crystal 2 is: " + crystal2);
     crystal3 = Math.floor(Math.random() * 12) + 1;
-    console.log(crystal3);
+    console.log("crystal 3 is: " + crystal3);
     crystal4 = Math.floor(Math.random() * 12) + 1;
-    console.log(crystal4);
+    console.log("crystal 1 is: " + crystal4);
 
     //functions to create variables (a,b,c,d) for the targetNumber generator below
     var a = Math.floor(Math.random()*2) + 1;
