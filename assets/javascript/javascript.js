@@ -45,7 +45,7 @@ function setUp() {
 
     //function to generate target number 
     targetNumber = a*crystal1 + b*crystal2 + c*crystal3 + d*crystal4
-    console.log(targetNumber);
+    console.log("target number is: " + targetNumber);
     $("#targetNumber").html(targetNumber); 
 
 }
